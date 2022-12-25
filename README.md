@@ -8,5 +8,7 @@
       <li>Average Case --> Saves all files in average.txt in random manner(random() function used).</li>
     </ol>
   </li>
-  <li></li>
+  <li>And last but not least is template.c file. This file has clock integrated, also asks you which case you want your algorithm to run on, 
+    saves the output in output.txt file and displayes the time taken by your algorithm.
+  </li>
 </ul>
