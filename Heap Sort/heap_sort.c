@@ -73,7 +73,7 @@ void printArray(long int arr[], long int N) {
 
 
 void main(){
-	long int a[100000], total, i, j, temp, choice;
+	long int a[500000], total, i, j, temp, choice;
 	FILE *fp, *fout;
 
 	//in which case you want to sort
