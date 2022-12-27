@@ -26,15 +26,10 @@ void heapify(long int arr[], long int N, long int i) {
     long int right = 2 * i + 2;
  
     // If left child is larger than root
-    if (left < N && arr[left] > arr[largest])
+    if (left < N && arr[left] > arr[largest]) largest = left;
  
-        largest = left;
- 
-    // If right child is larger than largest
-    // so far
-    if (right < N && arr[right] > arr[largest])
- 
-        largest = right;
+    // If right child is larger than largest so far
+    if (right < N && arr[right] > arr[largest]) largest = right;
  
     // Swap and continue heapifying if root is not largest
     // If largest is not root
@@ -50,7 +45,7 @@ void heapify(long int arr[], long int N, long int i) {
 
 //Heap Sort function
 void heapSort(long int arr[], long int N) {
- 	long int i;
+    long int i;
     // Build max heap
     for (i = N / 2 - 1; i >= 0; i--) heapify(arr, N, i);
  
@@ -67,7 +62,7 @@ void heapSort(long int arr[], long int N) {
 
 //printing sorted algorithm in console
 void printArray(long int arr[], long int N) {
-	long int i;
+    long int i;
     for (i = 0; i < N; i++) printf("%d\n", arr[i]);
     printf("\n");
 }
@@ -104,7 +99,7 @@ void main(){
 
 	//saving the values from file to array "a"
 	for(i = 0; i < total; i++) {
-		fscanf(fp, "%ld", &a[i]);
+	    fscanf(fp, "%ld", &a[i]);
 	}
 	
 	long int N = sizeof(a) / sizeof(a[0]);
@@ -128,7 +123,7 @@ void main(){
 	
 	// Printing in console
 	printf("Sorted array is\n");
-    printArray(a, N);
+	printArray(a, N);
 	
 
 	//saving sorted algorithm in "output.txt" file
