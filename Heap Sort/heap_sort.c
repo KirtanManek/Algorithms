@@ -3,7 +3,9 @@
 #include<unistd.h>
 //For mac users also include stdlib.h file
 
+
 long int a[1000000]; //Declaring the array globally in order to sort bigger values.
+
 
 //swap function
 void swap(long int* a, long int* b) {
