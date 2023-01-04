@@ -124,8 +124,8 @@ void main(){
 	
 	
 	// Printing in console
-	printf("Sorted array is\n");
-	printArray(a, N);
+//	printf("Sorted array is\n");
+//	printArray(a, N);
 	
 
 	//saving sorted algorithm in "output.txt" file

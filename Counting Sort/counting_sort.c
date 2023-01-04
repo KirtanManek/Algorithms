@@ -3,7 +3,7 @@
 //For mac users also include stdlib.h file
 
 void main(){
-	long int *fp, *fout, a[100000], total, i, j, temp, choice;
+	long int *fp, *fout, a[100000], total, i, j, temp, choice, max, length;
 
 	//in which case you want to sort
 	printf("Enter your choice : \n1.Best case\n2.Worst case\n3.Average case\nChoice : ");
@@ -39,10 +39,36 @@ void main(){
 	clock_t start, end;
 	double cpu_time_used;
 	start = clock();
+	
+	
+	// Find max from given array
+	for(i; i < 100000; i++) {
+	    if(max < a[i]) {
+	      max = a[i];
+	    }
+  	}
 
 
 
 	// Algorithm Logic
+	length = sizeof(a);
+	long int c[max], b[length];
+	for(i = 0; i < max; i++) { // Initializing array c
+		c[i] = 0;
+	}
+	
+	for(j = 1; j <= length; j++) {
+		c[a[j]] = c[a[j]] + 1;
+	}
+	
+	for(i = 1; i < max; i++) {
+		c[i] = c[i] + c[i-1];
+	}
+	
+	for(j = length; j > 0; j++) {
+		b[c[a[j]]] = a[j];
+		c[a[j]] = c[a[j]] - 1;
+	}
 
 
 
