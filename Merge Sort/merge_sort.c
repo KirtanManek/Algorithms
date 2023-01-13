@@ -2,10 +2,10 @@
 #include<time.h>
 //For mac users also include stdlib.h file
 
-long int a[100000];
+long int a[1000000], t[1000000];
 
 void merge_sort(long int low, long int mid, long int high) {
-	long int t[100000], i, j, k;
+	long int i, j, k;
 	i = low;
 	j = mid + 1;
 	k = low;
