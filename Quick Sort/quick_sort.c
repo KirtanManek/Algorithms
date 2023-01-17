@@ -103,4 +103,8 @@ void main(){
     
     //Printing the calculated time.
     printf("\nThe Time taken by your algorithm to sort elements is : %lf \n",cpu_time_used);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 0381d7f480eb4931ba623200ce7b27557c7c9dfd
